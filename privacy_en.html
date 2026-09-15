@@ -56,7 +56,7 @@ footer {
 
 <p>
 Effective Date: July 11, 2026<br>
-Last Updated: August 27, 2026
+Last Updated: September 15, 2026
 </p>
 
 <p>
@@ -65,6 +65,7 @@ Banakai (the “Operator”) establishes this Privacy Policy (the “Policy”) 
 
 <p>
 This Policy applies from the date version 2.0.1 of the App becomes available.
+Descriptions of image insertion apply when using image features in version 2.1.0 or later.
 </p>
 
 <h2>1. Our Approach to Privacy</h2>
@@ -74,7 +75,7 @@ The App is designed as a local-first application, with data primarily stored on 
 </p>
 
 <p>
-During normal use—including viewing, creating, and editing notes, studying with cloze exercises, and taking tests—the App does not transmit note content or study data to the Operator’s cloud services.
+During normal use without backup or note sharing—including viewing, creating, and editing notes, studying with cloze exercises, and taking tests—the App does not transmit note content, inserted images, or study data to the Operator’s cloud services. Section 3.1 describes what happens when automatic backup is enabled.
 </p>
 
 <p>
@@ -92,6 +93,7 @@ The App stores the following information on the user’s device:
 <ul>
 <li>Folder and note titles</li>
 <li>Note content, paragraphs, and cloze information</li>
+<li>Images the user selects or pastes into notes</li>
 <li>Study history, review history, and test history</li>
 <li>Review schedules and study activity</li>
 <li>Reminders and other app settings</li>
@@ -110,11 +112,15 @@ Cloud features handle encrypted data associated with the relevant feature.
 </p>
 
 <p>
-When a cloud feature is used for the first time, an anonymous internal identifier may be created as necessary to provide that feature. Users are not required to register a name, email address, or other account information.
+When a cloud feature is used for the first time, an internal identifier may be created as necessary to provide that feature. Users are not required to register a name or email address, but the internal identifier distinguishes users of cloud features.
 </p>
 
 <p>
 When cloud features are used, external service providers may process the internal identifier, communication date and time, IP address, and other communication or security-related information.
+</p>
+
+<p>
+Management information for backups and shared data includes associations with internal identifiers, creation and update times, and the size of encrypted data. This information is used to provide features, prevent misuse, and identify data for deletion. It is handled separately from the encrypted note content and images themselves.
 </p>
 
 <h3>2.3 Information Provided Through Inquiries</h3>
@@ -123,16 +129,22 @@ When cloud features are used, external service providers may process the interna
 If a user contacts the Operator by email, the Operator will handle the user’s email address, inquiry details, and any other information necessary to respond.
 </p>
 
+<h3>2.4 Importing Images</h3>
+
+<p>
+The photo picker provides the App only with images selected by the user, not the entire photo library. Images from the clipboard are retrieved when the user performs a paste action. Imported images are stored on the device and may be resized or compressed as needed.
+</p>
+
 <h2>3. How Data Is Handled by Each Feature</h2>
 
 <h3>3.1 Backup and Data Restoration</h3>
 
 <p>
-When the user enables automatic backup or performs a manual backup, the App compresses and encrypts the data on the device before storing it in the cloud.
+When the user enables automatic backup or performs a manual backup, the App compresses and encrypts eligible on-device data, including images inserted into notes, on the device before storing it in the cloud.
 </p>
 
 <p>
-Note content and study data are not stored in the cloud in an unencrypted form.
+In backups created by this feature, note content, inserted images, and study data are not stored in the cloud in an unencrypted form.
 </p>
 
 <p>
@@ -154,7 +166,7 @@ When available, the App may store only the information required for recovery in 
 </p>
 
 <p>
-Note content, study history, and test history are not stored directly in iCloud Keychain.
+Note content, inserted images, study history, and test history are not stored directly in iCloud Keychain.
 </p>
 
 <h3>3.3 Note Sharing</h3>
@@ -165,6 +177,10 @@ When the user creates a sharing link, the App encrypts the shared note’s title
 
 <p>
 Study history, review history, test history, app settings, and similar information are not shared.
+</p>
+
+<p>
+Images inserted into notes are excluded from sharing links. In shared text, images are replaced with “［画像省略］” (image omitted), and image data is not uploaded as part of the shared data.
 </p>
 
 <p>
@@ -197,6 +213,10 @@ For users updating from an earlier version of the App, the App may retrieve and 
 
 <p>
 The retrieved data is migrated to the on-device database and is not used for any purpose other than migration.
+</p>
+
+<p>
+Notes and study data previously stored in the cloud by earlier versions may be associated with an earlier-version user identifier. Migration uses that association to retrieve the relevant data. The description of the current encrypted backup feature does not mean that data already stored by earlier versions is automatically re-encrypted.
 </p>
 
 <p>
